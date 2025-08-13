@@ -1,0 +1,16 @@
+canvas {
+    border: 1px solid black;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .controles {
+    margin-bottom: 10px;
+  }
+  
+  .contenedor-slider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
