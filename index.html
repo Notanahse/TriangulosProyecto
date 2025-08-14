@@ -4,23 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contador de Triángulos</title>
-  <link rel="stylesheet" href="estilos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="controles">
-    <label for="tamanoCuadricula">Tamaño de la cuadrícula (n x n): </label>
-    <input type="number" id="tamanoCuadricula" value="5" min="1" max="10" />
-    <button id="botonIniciar">Iniciar</button>
+  <div class="wrapper">
+    <div class="card">
+      <h1>Contador de Triángulos</h1>
+      <h2 class="subtitulo">Integrantes: Arias Francisco · Del Dó Mariano · Huerga Valentín · Santillán Lucio</h2>
+
+      <div class="controls">
+        <label for="tamanoCuadricula">Tamaño de cuadrícula:</label>
+        <input type="number" id="tamanoCuadricula" value="5" min="1" max="10" />
+        <button id="botonIniciar">Iniciar</button>
+      </div>
+
+      <div class="slider-container">
+        <label for="velocidad">Velocidad:</label>
+        <input type="range" id="velocidad" min="10" max="1000" value="200" />
+      </div>
+
+      <div class="canvas-container">
+        <canvas id="lienzo" width="500" height="500"></canvas>
+      </div>
+
+      <div id="contador" class="counter"></div>
+    </div>
   </div>
-
-  <div class="contenedor-slider">
-    <label for="velocidad">Velocidad:</label>
-    <input type="range" id="velocidad" min="10" max="1000" value="200" />
-  </div>
-
-  <canvas id="lienzo" width="500" height="500"></canvas>
-
-  <div id="contador"></div>
 
   <script src="script.js"></script>
 </body>
